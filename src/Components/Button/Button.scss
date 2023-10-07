@@ -1,0 +1,75 @@
+
+@mixin button-default() {
+  font: {
+    weight: 900;
+    size: 18px;
+  }
+  border-radius: 5px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.button-dark {
+  padding: 7px 10px;
+  color: white;
+  background-color: #1ab394;
+  border: none;
+  @include button-default();
+
+  &:hover {
+    background-color:#1ab394;
+  }
+
+  &:active {
+    background-color: #1ab394;
+  }
+  &:disabled {
+    background-color: #CBCFD3;
+    cursor: not-allowed;
+  }
+}
+
+.button-lite {
+  padding: 5px 10px;
+  color: black;
+  border: 3px solid #1ab394;
+  background-color: #fdfdfd;
+  @include button-default();
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &:active {
+    background-color: rgb(207, 207, 207);
+  }
+}
+
+.button-black {
+  padding: 5px 20px;
+  color: black;
+  border: 3px solid rgb(20, 19, 19);
+  background-color: #fdfdfd;
+  @include button-default();
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &:active {
+    background-color: rgb(207, 207, 207);
+  }
+}
+.button_new
+{
+  padding: 10px 20px;
+background-color: #1ab494;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+
+}
